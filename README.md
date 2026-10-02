@@ -1,51 +1,63 @@
-# Cybersecurity Investigations
+# Case 01: Suspicious Data Access Investigation
 
-Hands-on cybersecurity investigation portfolio covering incident triage, log analysis, threat investigation, incident response, and remediation.
+Hands-on cybersecurity investigation focused on suspicious authentication activity and potential unauthorized access to sensitive data.
 
-## Project Overview
+## Case Overview
 
-This repository documents simulated cybersecurity investigations designed to demonstrate practical security analysis and incident response skills.
+A simulated security alert identified suspicious activity involving an employee account. The account authenticated from an unfamiliar external IP address and subsequently accessed multiple sensitive files.
 
-Each case follows a structured investigation process:
+The investigation examined authentication activity, source IPs, file access patterns, potential impact, and appropriate containment and remediation actions.
+
+## Investigation Process
 
 1. Detect
 2. Triage
-3. Investigate
-4. Analyze Evidence
+3. Analyze Evidence
+4. Establish Timeline
 5. Assess Impact
-6. Recommend Containment and Remediation
-7. Document Findings
+6. Map Findings to MITRE ATT&CK
+7. Recommend Containment and Remediation
+8. Document Findings
 
 ## Skills Demonstrated
 
 - Security incident investigation
 - Log analysis
 - Authentication analysis
+- IP and access pattern analysis
 - Data access monitoring
+- MITRE ATT&CK mapping
 - Incident triage
-- Threat identification
 - Evidence analysis
 - Risk and impact assessment
 - Containment and remediation planning
 - Incident documentation
 - Security communication
 
-## Investigation Cases
+## Key Findings
 
-### Case 01: Suspicious Data Access
+- Successful authentication from an unfamiliar external IP address
+- Multiple failed authentication attempts followed by successful authentication
+- Access to multiple sensitive files
+- Repeated access to customer records
+- Significant change from the user's observed normal access pattern
 
-Investigated suspicious activity involving an employee account that authenticated from an unfamiliar external IP address and accessed multiple sensitive files.
+## MITRE ATT&CK Techniques
 
-Key investigation areas:
+- **T1078: Valid Accounts**
+- **T1005: Data from Local System**
 
-- Authentication activity
-- Source IP analysis
-- Sensitive file access
-- Access pattern changes
-- Potential unauthorized account activity
-- Containment and remediation recommendations
+## Investigation Outcome
 
-[View Case 01](./Case-01-Suspicious-Data-Access/)
+The activity was assessed as suspicious and assigned a **High** severity based on the potential unauthorized access to sensitive customer, employee, and financial information.
+
+The available evidence did not confirm account compromise or data exfiltration. Additional authentication, endpoint, VPN, and network evidence would be required to determine the full scope of the activity.
+
+## Files
+
+- [Incident Report](./incident-report.md)
+- [Investigation Timeline](./investigation-timeline.md)
+- [Security Logs](./evidence/case1_security_logs.csv)
 
 ## Disclaimer
 
