@@ -7,9 +7,11 @@ A security alert was generated for suspicious activity involving the user accoun
 ## 2. Initial Triage
 
 ### User
+
 j.smith
 
 ### Suspicious IP Address
+
 185.71.44.19
 
 ### Initial Indicators
@@ -74,7 +76,22 @@ The available evidence indicates suspicious activity involving the `j.smith` acc
 
 The evidence is consistent with potential unauthorized account activity. However, the available logs alone do not establish whether the account was compromised or whether the activity was authorized.
 
-## 6. Impact and Severity Assessment
+## 6. MITRE ATT&CK Mapping
+
+The observed activity was mapped to the following MITRE ATT&CK techniques based on the available evidence.
+
+| Technique | ID | Relevance to Investigation |
+|---|---|---|
+| Valid Accounts | T1078 | The `j.smith` account successfully authenticated from an unfamiliar external IP address, indicating potential unauthorized use of a legitimate account. |
+| Data from Local System | T1005 | The account accessed multiple sensitive files, including customer records, employee salary information, financial information, and employee benefits information. |
+
+### Mapping Assessment
+
+The available evidence supports potential use of a legitimate account to access sensitive information. However, the logs do not establish whether the account was compromised or whether the accessed information was copied or exfiltrated.
+
+Additional endpoint, authentication, VPN, and network evidence would be required to identify further ATT&CK techniques with confidence.
+
+## 7. Impact and Severity Assessment
 
 ### Potential Impact
 
@@ -118,7 +135,7 @@ The available evidence does not confirm that data was downloaded, copied, or exf
 
 Further investigation is required to determine whether the activity was legitimate and whether any data was actually removed from the environment.
 
-## 7. Containment and Remediation Recommendations
+## 8. Containment and Remediation Recommendations
 
 ### Immediate Containment
 
@@ -147,7 +164,7 @@ Further investigation is required to determine whether the activity was legitima
 
 The account and associated access should be investigated and contained promptly due to the potential unauthorized access to sensitive customer, employee, and financial information.
 
-## 8. Final Investigation Conclusion
+## 9. Final Investigation Conclusion
 
 ### Investigation Summary
 
