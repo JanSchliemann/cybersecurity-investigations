@@ -73,3 +73,47 @@ The available evidence indicates suspicious activity involving the `j.smith` acc
 5. A significant change from the user's observed normal access pattern.
 
 The evidence is consistent with potential unauthorized account activity. However, the available logs alone do not establish whether the account was compromised or whether the activity was authorized.
+
+## 6. Impact and Severity Assessment
+
+### Potential Impact
+
+The suspicious activity involved an employee account accessing multiple sensitive business files from an unfamiliar external IP address.
+
+The potentially affected information includes:
+
+- Customer records
+- Employee salary information
+- Financial forecasting information
+- Employee benefits information
+
+If the activity was unauthorized, the exposure of this information could create privacy, financial, operational, and regulatory risks for the organization.
+
+### Severity
+
+**Severity: High**
+
+### Severity Rationale
+
+The incident is assessed as High based on the combination of:
+
+- Successful authentication from an unfamiliar external IP.
+- Multiple failed authentication attempts followed by successful authentication.
+- Access to multiple sensitive files.
+- Repeated access to customer records.
+- A significant change from the user's normal access pattern.
+
+The available evidence does not confirm that data was downloaded, copied, or exfiltrated. Therefore, the assessment is based on the potential impact of the observed access rather than confirmed data loss.
+
+### Affected Assets
+
+- User account: `j.smith`
+- Internal file resources containing customer, employee, and financial information
+- Authentication infrastructure
+- Corporate data environment
+
+### Current Impact Assessment
+
+**Potential unauthorized access to sensitive data**
+
+Further investigation is required to determine whether the activity was legitimate and whether any data was actually removed from the environment.
