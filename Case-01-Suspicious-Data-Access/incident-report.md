@@ -117,3 +117,32 @@ The available evidence does not confirm that data was downloaded, copied, or exf
 **Potential unauthorized access to sensitive data**
 
 Further investigation is required to determine whether the activity was legitimate and whether any data was actually removed from the environment.
+
+## 7. Containment and Remediation Recommendations
+
+### Immediate Containment
+
+1. Temporarily disable the `j.smith` account or require an immediate password reset.
+2. Revoke active sessions and authentication tokens associated with the account.
+3. Investigate and restrict access from `185.71.44.19` while the investigation is ongoing.
+4. Review the account's permissions and temporarily restrict access to sensitive data if necessary.
+
+### Investigation and Validation
+
+5. Confirm with the user whether the activity from `185.71.44.19` was legitimate.
+6. Review additional authentication, VPN, endpoint, and network logs to determine the origin of the activity.
+7. Determine whether any files were downloaded, copied, modified, or transferred outside the organization.
+8. Review access logs for additional suspicious activity involving the account.
+
+### Remediation
+
+9. Reset credentials and enforce multi-factor authentication if not already enabled.
+10. Review and reduce unnecessary access privileges for the affected account.
+11. Monitor the account for additional suspicious activity following restoration.
+12. Document the investigation, findings, actions taken, and final outcome.
+
+### Recommended Priority
+
+**Immediate**
+
+The account and associated access should be investigated and contained promptly due to the potential unauthorized access to sensitive customer, employee, and financial information.
