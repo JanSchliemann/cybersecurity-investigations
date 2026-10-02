@@ -146,3 +146,50 @@ Further investigation is required to determine whether the activity was legitima
 **Immediate**
 
 The account and associated access should be investigated and contained promptly due to the potential unauthorized access to sensitive customer, employee, and financial information.
+
+## 8. Final Investigation Conclusion
+
+### Investigation Summary
+
+The investigation examined suspicious activity involving the `j.smith` account. The account normally authenticated from the internal IP address `10.24.15.22`. Activity was also observed from the unfamiliar external IP address `185.71.44.19`.
+
+The account successfully authenticated from the external IP and subsequently accessed multiple sensitive files, including customer records, employee salary information, financial forecasting information, and employee benefits information.
+
+Two additional authentication failures were observed from the same external IP before another successful authentication. Following this authentication, the account repeatedly accessed `Customer_Records.csv`.
+
+### Findings
+
+The investigation identified the following indicators:
+
+- Authentication from an unfamiliar external IP.
+- Multiple failed authentication attempts followed by successful authentication.
+- Access to multiple sensitive files.
+- Repeated access to customer records.
+- A significant change from the user's observed normal access pattern.
+
+### Conclusion
+
+The activity is considered **suspicious and requires security investigation and containment**.
+
+The available evidence is consistent with potential unauthorized use of the `j.smith` account. However, the available logs do not provide sufficient evidence to confirm that the account was compromised or that data was successfully exfiltrated.
+
+Additional authentication, endpoint, VPN, and network logs should be reviewed to determine the source of the activity and whether sensitive information was transferred outside the organization.
+
+### Recommended Actions
+
+- Validate the activity with the account owner.
+- Reset credentials and revoke active sessions if unauthorized activity is confirmed or cannot be validated.
+- Investigate the external IP address and related authentication activity.
+- Review endpoint, VPN, and network logs for additional evidence.
+- Determine whether sensitive files were downloaded or transferred.
+- Review account permissions and apply least-privilege access.
+- Continue monitoring the account for additional suspicious activity.
+- Document the final investigation outcome and remediation actions.
+
+### Final Severity
+
+**High**
+
+### Investigation Status
+
+**Pending further investigation**
