@@ -29,3 +29,25 @@
 | 15:22:31 | j.smith | 10.24.15.22 | Login | Successful login from normal internal IP |
 | 15:30:42 | j.smith | 10.24.15.22 | File Access | Employee_Benefits.xlsx |
 | 16:01:18 | j.smith | 10.24.15.22 | Logout | Normal session ended |
+
+## Investigation Highlights
+
+### Normal Activity
+
+The account's observed normal activity originated from `10.24.15.22`.
+
+### Suspicious Activity
+
+At 13:18:44, the account authenticated from the unfamiliar external IP `185.71.44.19` and subsequently accessed multiple sensitive files.
+
+### Authentication Anomaly
+
+At 14:02:18 and 14:03:02, authentication attempts from `185.71.44.19` failed. A successful authentication occurred at 14:04:11, followed by repeated access to `Customer_Records.csv`.
+
+### Return to Normal Activity
+
+At 15:22:31, the account authenticated again from the observed normal IP `10.24.15.22`.
+
+### Investigation Significance
+
+The timeline demonstrates a clear change in authentication source and access behavior, supporting the decision to investigate the activity as potentially unauthorized.
