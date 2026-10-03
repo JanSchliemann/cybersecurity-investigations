@@ -1,0 +1,63 @@
+============================================================
+SIMULATED PHISHING EMAIL
+============================================================
+
+Email Metadata
+
+From: RBC Digital Banking Security <security-alert@rbcdigital-secure.com>
+To: j.smith@northstarbank.ca
+Date: October 2, 2026 09:17:42 EST
+Subject: Urgent: Your RBC Business Banking Access Requires Verification
+Message-ID: <20261002.091742.48291@rbcdigital-secure.com>
+Reply-To: security-alert@rbcdigital-secure.com
+Content-Type: text/html
+X-Originating-IP: 185.71.44.19
+
+------------------------------------------------------------
+Email Body
+------------------------------------------------------------
+
+Dear J. Smith,
+
+Our security systems detected unusual activity associated with
+your business banking profile.
+
+To prevent temporary suspension of your access, please verify
+your identity and confirm your account information immediately.
+
+Verify Your Account:
+https://rbcdigital-secure.com/verify
+
+If you do not complete verification within 24 hours, your
+online banking access may be temporarily restricted.
+
+RBC Digital Banking Security Team
+
+------------------------------------------------------------
+Embedded Link
+------------------------------------------------------------
+
+Displayed Text:
+Verify Your Account
+
+Actual URL:
+https://rbcdigital-secure.com/verify
+
+------------------------------------------------------------
+Additional Headers
+------------------------------------------------------------
+
+Return-Path: <security-alert@rbcdigital-secure.com>
+Received: from mail.rbcdigital-secure.com (185.71.44.19)
+        by mail.northstarbank.ca
+Authentication-Results:
+        spf=fail
+        dkim=fail
+        dmarc=fail
+
+X-Mailer: SecureMail Gateway
+User-Agent: Mozilla/5.0
+
+============================================================
+END OF SIMULATED EMAIL
+============================================================
