@@ -1,0 +1,12 @@
+timestamp,user,source_ip,event_type,authentication_result,application,details
+2026-10-02 09:21:14,j.smith,10.24.15.22,LOGIN,SUCCESS,Windows,"Normal workstation login"
+2026-10-02 09:23:41,j.smith,10.24.15.22,WEB_LOGIN,SUCCESS,Business Banking,"Normal banking session"
+2026-10-02 09:31:08,j.smith,10.24.15.22,LOGOUT,SUCCESS,Business Banking,"User logged out"
+2026-10-02 09:42:17,j.smith,185.71.44.19,LOGIN,FAILURE,Business Banking,"Invalid password"
+2026-10-02 09:42:31,j.smith,185.71.44.19,LOGIN,FAILURE,Business Banking,"Invalid password"
+2026-10-02 09:43:02,j.smith,185.71.44.19,LOGIN,SUCCESS,Business Banking,"Successful authentication"
+2026-10-02 09:43:19,j.smith,185.71.44.19,ACCOUNT_ACCESS,SUCCESS,Business Banking,"Account accessed"
+2026-10-02 09:44:07,j.smith,185.71.44.19,PROFILE_ACCESS,SUCCESS,Business Banking,"Customer profile information accessed"
+2026-10-02 09:45:22,j.smith,185.71.44.19,SESSION_ACTIVITY,SUCCESS,Business Banking,"Multiple account pages accessed"
+2026-10-02 09:47:51,j.smith,185.71.44.19,LOGOUT,SUCCESS,Business Banking,"Session ended"
+2026-10-02 10:02:16,j.smith,10.24.15.22,LOGIN,SUCCESS,Windows,"Normal workstation login"
