@@ -29,7 +29,7 @@
 
 ## Indicators of Compromise
 
-- Sender: security-alert@rbcdigital-secure.com
-- Domain: rbcdigital-secure.com
-- URL: https://rbcdigital-secure.com/verify
-- IP Address: 185.71.44.19
+- **Sender:** security-alert@rbcdigital-secure.com
+- **Domain:** rbcdigital-secure.com
+- **URL:** https://rbcdigital-secure.com/verify
+- **IP Address:** 185.71.44.19
