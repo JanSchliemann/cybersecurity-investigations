@@ -25,7 +25,15 @@ Investigated suspicious authentication activity and potential unauthorized acces
 
 **Skills:** Log Analysis, Authentication Analysis, Incident Triage, Data Security, MITRE ATT&CK, Impact Assessment, Containment, Remediation
 
-[View Case 01](./Case-01-Suspicious-Data-Access/)
+[View Case 01](https://github.com/JanSchliemann/cybersecurity-investigations/blob/main/Case-01-Suspicious-Data-Access)
+
+### Case 02: Phishing & Credential Compromise
+
+Investigated a simulated phishing attack against a financial institution, tracing activity from the initial phishing email through potential credential compromise and unauthorized account access.
+
+**Skills:** Phishing Investigation, Email Analysis, IOC Investigation, Threat Intelligence, Authentication Analysis, MITRE ATT&CK, Impact Assessment, Containment, Remediation
+
+[View Case 02](https://github.com/JanSchliemann/cybersecurity-investigations/blob/main/Case-02-Phishing-Credential-Compromise)
 
 ## Disclaimer
 
